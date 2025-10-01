@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural Digital - Ambiente de Aprendizaje STEM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="iconos_stem.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Mural STEM</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                <li><a href="#rasgos" class="nav-link">Rasgos</a></li>
+                <li><a href="#contraste" class="nav-link">Contraste</a></li>
+                <li><a href="#problema" class="nav-link">Problema</a></li>
+                <li><a href="#propuesta" class="nav-link">Propuesta</a></li>
+                <li><a href="#referencias" class="nav-link">Referencias</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="menu-btn" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Mural Digital – Ambiente de Aprendizaje STEM</h1>
+                <h2 class="hero-subtitle">Entrenamiento con simuladores de maquinaria minera en Drummond</h2>
+                <p class="hero-description">Infografía interactiva – Unidad 2 · Fundamentos de la Educación STEM</p>
+                
+                <div class="stem-icons">
+                    <div class="stem-icon" data-tooltip="Ciencia">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <title>Ciencia</title>
+                            <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="13" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="4" x2="12" y2="20" stroke="currentColor" stroke-width="2"/>
+                            <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stem-icon" data-tooltip="Tecnología">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <title>Tecnología</title>
+                            <rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="7" y="7" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="10" y1="4" x2="10" y2="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="14" y1="4" x2="14" y2="2" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stem-icon" data-tooltip="Ingeniería">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <title>Ingeniería</title>
+                            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="2" x2="12" y2="7" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="17" x2="12" y2="22" stroke="currentColor" stroke-width="2"/>
+                            <line x1="2" y1="12" x2="7" y2="12" stroke="currentColor" stroke-width="2"/>
+                            <line x1="17" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stem-icon" data-tooltip="Matemáticas">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <title>Matemáticas</title>
+                            <path d="M10 7L17 17M17 7L10 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M5 21C6.10457 21 7 20.1046 7 19C7 17.8954 6.10457 17 5 17C3.89543 17 3 17.8954 3 19C3 20.1046 3.89543 21 5 21Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M19 7C20.1046 7 21 6.10457 21 5C21 3.89543 20.1046 3 19 3C17.8954 3 17 3.89543 17 5C17 6.10457 17.8954 7 19 7Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <button id="download-btn" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Descargar mural (.png)
+                    </button>
+                    <button id="copy-refs-btn" class="btn btn-secondary">
+                        <i class="fas fa-copy"></i> Copiar referencias
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="simulador_cabina.png" alt="Simulador de camión minero con pantallas" class="mural-image clickable-image">
+                    <p class="image-caption">Simulador de maquinaria minera - Entorno de entrenamiento profesional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rasgos Metodológicos -->
+    <section id="rasgos" class="section">
+        <div class="container">
+            <h2 class="section-title">Rasgos metodológicos</h2>
+            
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="rasgos-tab">Rasgos metodológicos</button>
+                    <button class="tab-btn" data-tab="aspectos-tab">5 aspectos metodológicos</button>
+                </div>
+                
+                <div class="tab-content active" id="rasgos-tab">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Integración STEM en el currículo</h3>
+                            <p>El simulador combina cálculos matemáticos (tiempos, cargas, distancias), principios de ingeniería (mecánica de camiones y palas), uso de tecnología avanzada (realidad virtual, controles hápticos) y conceptos científicos (física del movimiento y resistencia de materiales).</p>
+                            <div class="image-container small-image">
+                                <img src="iconos_stem.png" alt="Integración STEM" class="mural-image clickable-image">
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Ambiente seguro y flexible</h3>
+                            <p>Permite practicar maniobras críticas en un entorno virtual controlado, reduciendo riesgos y favoreciendo el aprendizaje autónomo.</p>
+                            <div class="image-container small-image">
+                                <img src="entrenamiento_realista.png" alt="Entrenamiento realista" class="mural-image clickable-image">
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Colaboración y rol docente</h3>
+                            <p>Los instructores observan métricas en tiempo real, generan retroalimentación inmediata y fortalecen la comunidad de aprendizaje al integrar a operarios, aprendices y supervisores.</p>
+                            <div class="image-container small-image">
+                                <img src="comunidad_aprendizaje.png" alt="Comunidad de aprendizaje" class="mural-image clickable-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="aspectos-tab">
+                    <div class="aspectos-list">
+                        <div class="aspecto-item">
+                            <h3>1. Integración STEM al currículo</h3>
+                            <p>Articula matemáticas, física, ingeniería y tecnología aplicada en un mismo escenario.</p>
+                        </div>
+                        <div class="aspecto-item">
+                            <h3>2. Circulación entre espacios de aprendizaje</h3>
+                            <p>Conecta la teoría en aula con la práctica digital y posteriormente con el campo real.</p>
+                        </div>
+                        <div class="aspecto-item">
+                            <h3>3. Laboratorio pedagógico</h3>
+                            <p>Brinda un entorno seguro, flexible y con herramientas para la indagación y el ensayo-error.</p>
+                        </div>
+                        <div class="aspecto-item">
+                            <h3>4. Discusión y producción de conocimiento</h3>
+                            <p>Los datos generados por el simulador sirven como base para análisis críticos, resolución de problemas y diseño de mejoras operativas.</p>
+                        </div>
+                        <div class="aspecto-item">
+                            <h3>5. Fortalecimiento de la comunidad de aprendizaje</h3>
+                            <p>Involucra a instructores, aprendices y la empresa en un proceso colaborativo que combina seguridad, eficiencia e innovación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contraste Analítico -->
+    <section id="contraste" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contraste analítico</h2>
+            <div class="contraste-content">
+                <p>El entrenamiento con simuladores de maquinaria minera refleja plenamente los cinco aspectos metodológicos descritos en la lectura fundamental. Primero, permite la integración STEM al currículo, pues articula matemáticas, física, ingeniería y tecnología aplicada en un mismo escenario. Segundo, favorece la circulación entre diferentes espacios de aprendizaje, al conectar la teoría en aula con la práctica digital y posteriormente con el campo real. Tercero, se constituye en un laboratorio pedagógico, al brindar un entorno seguro, flexible y con herramientas para la indagación y el ensayo-error. Cuarto, promueve la discusión y producción de conocimiento, ya que los datos generados por el simulador sirven como base para análisis críticos, resolución de problemas y diseño de mejoras operativas. Finalmente, fortalece la comunidad de aprendizaje, al involucrar a instructores, aprendices y la empresa en un proceso colaborativo que combina seguridad, eficiencia e innovación.</p>
+                <div class="image-container medium-image">
+                    <img src="comunidad_aprendizaje.png" alt="Comunidad de aprendizaje colaborativo" class="mural-image clickable-image">
+                    <p class="image-caption">Colaboración entre aprendices e instructores en entorno STEM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema Identificado -->
+    <section id="problema" class="section">
+        <div class="container">
+            <h2 class="section-title">Problema identificado</h2>
+            <div class="problema-content">
+                <div class="problema-card">
+                    <div class="problema-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Brecha de transferencia simulador-operación real</h3>
+                    <p>Algunos aprendices no logran trasladar con eficacia las habilidades digitales al contexto real, lo que limita la efectividad del proceso formativo.</p>
+                    <div class="image-container medium-image">
+                        <img src="entrenamiento_realista.png" alt="Entrenamiento realista" class="mural-image clickable-image">
+                        <p class="image-caption">Instructor supervisando sesión de entrenamiento en simulador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Transformación -->
+    <section id="propuesta" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Propuesta de transformación</h2>
+            <div class="propuesta-grid">
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Retroalimentación híbrida</h3>
+                    <p>Comparar datos de simulador vs campo por aprendiz.</p>
+                </div>
+                
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Sesiones reflexivas</h3>
+                    <p>Revisión guiada de errores y aciertos con evidencia.</p>
+                </div>
+                
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gamificación</h3>
+                    <p>Logros e insignias por métricas de seguridad, precisión y eficiencia.</p>
+                </div>
+                
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Ruta de práctica progresiva</h3>
+                    <p>De escenarios básicos a complejos con checklists de seguridad.</p>
+                </div>
+            </div>
+            <div class="image-container full-width-image">
+                <img src="transformacion_innovadora.png" alt="Transformación innovadora con simuladores VR" class="mural-image clickable-image">
+                <p class="image-caption">Sala moderna con simuladores VR y elementos de gamificación</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referencias -->
+    <section id="referencias" class="section">
+        <div class="container">
+            <h2 class="section-title">Referencias</h2>
+            <div class="referencias-content">
+                <ol class="referencias-list">
+                    <li>Agencia Nacional de Minería. (2024). <i>Guía de buenas prácticas para la exploración, estimación, recursos y reservas de carbón en Colombia</i>. ANM. https://www.anm.gov.co/sites/default/files/2024-12-20-Guia-buenas-practicas-exploracion-estimacion-recursos-reservas-carbon.pdf</li>
+                    <li>Cat Simulators. (2025). <i>Mining Simulators</i>. https://catsimulators.com/es/mining-simulators/</li>
+                    <li>CETEMIN. (2025). <i>Simuladores realidad virtual minería: capacitación minera</i>. https://blog.cetemin.edu.pe/simuladores-realidad-virtual-mineria/</li>
+                    <li>Lateef, F. (2010). Simulation-based learning: Just like the real thing. <i>Journal of Emergencies, Trauma, and Shock, 3</i>(4), 348–352. https://doi.org/10.4103/0974-2700.70743</li>
+                    <li>Simumak. (2020). <i>Curso con Minesim para formadores en maquinaria minera</i>. https://simumak.com/blog/2020/11/17/curso-maquinaria-minera/</li>
+                    <li>ThoroughTec Simulation. (s.f.). <i>Cybermine: simuladores de misión completa</i>. https://www.thoroughtec.com/es/cybermine-simuladores-de-mision-completa/</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p>Autor: Diego Fabián Fuentes García – Profesora: Sandra Milena Rojas Tolosa – Modulo Fundamentos De La Educación STEM · 2025</p>
+        </div>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="image-modal" class="image-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-caption"></p>
+        </div>
+    </div>
+
+    <!-- Notificación -->
+    <div id="notification" class="notification">
+        <span id="notification-text"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
